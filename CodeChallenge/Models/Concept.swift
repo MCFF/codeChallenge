@@ -9,8 +9,7 @@ import Foundation
 
 struct Concept:Codable{
     
-    var question = ""
-    var answer = ""
+    var title = ""
     var description = ""
     var example = ""
 }

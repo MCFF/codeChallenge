@@ -12,17 +12,28 @@ class DetailViewController: UIViewController {
     var detailViewModel = DetailViewModel()
     
     
-    @IBOutlet weak var exampleTextField: UILabel!
+    @IBOutlet weak var titleTextField: UILabel!
+    @IBOutlet weak var descriptionTextField: UILabel!
+    @IBOutlet weak var exampleTextField: CustomUILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        detailViewModel.bindViewController = self.updateUI
+        prepareUI()
         updateUI()
+    }
+    
+    func prepareUI(){
+        
+        exampleTextField.padding(top: 5, left: 10, bottom: 5, right: 10)
+        detailViewModel.bindViewController = self.updateUI
     }
     
     func updateUI(){
         
+        
+        titleTextField.text = detailViewModel.concept.title
+        descriptionTextField.text = detailViewModel.concept.description
         exampleTextField.text = detailViewModel.concept.example
     }
 

@@ -41,7 +41,7 @@ class ConceptsViewController: UIViewController, UITableViewDelegate, UITableView
         if let cell = tableView.dequeueReusableCell(withIdentifier: "conceptCell"){
             
             let title = cell.viewWithTag(1) as! UILabel
-            title.text = conceptsViewModel.concepts[indexPath.row].question
+            title.text = conceptsViewModel.concepts[indexPath.row].title
             
             return cell
         }

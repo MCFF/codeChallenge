@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D1123DD227067B5700804AC5 /* CustomUiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1123DD127067B5700804AC5 /* CustomUiLabel.swift */; };
+		D16CBD3E2707634D00B1A5F0 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CBD3D2707634D00B1A5F0 /* Downloader.swift */; };
 		D1D625AE27060A0300F1C80A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D625AD27060A0300F1C80A /* AppDelegate.swift */; };
 		D1D625B027060A0300F1C80A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D625AF27060A0300F1C80A /* SceneDelegate.swift */; };
 		D1D625B227060A0300F1C80A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D625B127060A0300F1C80A /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		D1123DD127067B5700804AC5 /* CustomUiLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUiLabel.swift; sourceTree = "<group>"; };
+		D16CBD3D2707634D00B1A5F0 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		D1D625AA27060A0300F1C80A /* CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D625AD27060A0300F1C80A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D625AF27060A0300F1C80A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				D1123DD127067B5700804AC5 /* CustomUiLabel.swift */,
+				D16CBD3D2707634D00B1A5F0 /* Downloader.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				D1D625CF270660F600F1C80A /* DetailViewController.swift in Sources */,
 				D1D625C4270610D900F1C80A /* Concept.swift in Sources */,
+				D16CBD3E2707634D00B1A5F0 /* Downloader.swift in Sources */,
 				D1D625B227060A0300F1C80A /* ViewController.swift in Sources */,
 				D1D625D12706610400F1C80A /* DetailViewModel.swift in Sources */,
 				D1D625AE27060A0300F1C80A /* AppDelegate.swift in Sources */,
