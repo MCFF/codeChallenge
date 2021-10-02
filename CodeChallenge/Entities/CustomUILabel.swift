@@ -15,6 +15,14 @@ class CustomUILabel: UILabel{
     private var rightPadding:CGFloat = 0.0
     private var bottomPadding:CGFloat = 0.0
     
+    @IBInspectable
+    private var radius: CGFloat = 0{
+        didSet{
+            self.layer.cornerRadius = radius
+            self.layer.masksToBounds = true
+        }
+    }
+    
     override func drawText(in rect: CGRect) {
         let inset = UIEdgeInsets(top: topPadding, left: leftPadding, bottom: bottomPadding, right: rightPadding)
         let rect = rect.inset(by: inset)

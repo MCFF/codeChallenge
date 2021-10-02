@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D1123DD227067B5700804AC5 /* CustomUiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1123DD127067B5700804AC5 /* CustomUiLabel.swift */; };
+		D1123DD227067B5700804AC5 /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1123DD127067B5700804AC5 /* CustomUILabel.swift */; };
 		D16CBD3E2707634D00B1A5F0 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CBD3D2707634D00B1A5F0 /* Downloader.swift */; };
 		D1D625AE27060A0300F1C80A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D625AD27060A0300F1C80A /* AppDelegate.swift */; };
 		D1D625B027060A0300F1C80A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D625AF27060A0300F1C80A /* SceneDelegate.swift */; };
@@ -22,10 +22,11 @@
 		D1D625CD27063D2700F1C80A /* ConceptsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D625CC27063D2700F1C80A /* ConceptsListViewModel.swift */; };
 		D1D625CF270660F600F1C80A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D625CE270660F600F1C80A /* DetailViewController.swift */; };
 		D1D625D12706610400F1C80A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D625D02706610400F1C80A /* DetailViewModel.swift */; };
+		D1DF62D72708DCAB00592591 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF62D62708DCAB00592591 /* CustomUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D1123DD127067B5700804AC5 /* CustomUiLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUiLabel.swift; sourceTree = "<group>"; };
+		D1123DD127067B5700804AC5 /* CustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
 		D16CBD3D2707634D00B1A5F0 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		D1D625AA27060A0300F1C80A /* CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D625AD27060A0300F1C80A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		D1D625CC27063D2700F1C80A /* ConceptsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptsListViewModel.swift; sourceTree = "<group>"; };
 		D1D625CE270660F600F1C80A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D1D625D02706610400F1C80A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		D1DF62D62708DCAB00592591 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 		D1123DD027067B4400804AC5 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				D1123DD127067B5700804AC5 /* CustomUiLabel.swift */,
+				D1123DD127067B5700804AC5 /* CustomUILabel.swift */,
 				D16CBD3D2707634D00B1A5F0 /* Downloader.swift */,
+				D1DF62D62708DCAB00592591 /* CustomUIView.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -201,12 +204,13 @@
 				D16CBD3E2707634D00B1A5F0 /* Downloader.swift in Sources */,
 				D1D625B227060A0300F1C80A /* ViewController.swift in Sources */,
 				D1D625D12706610400F1C80A /* DetailViewModel.swift in Sources */,
+				D1DF62D72708DCAB00592591 /* CustomUIView.swift in Sources */,
 				D1D625AE27060A0300F1C80A /* AppDelegate.swift in Sources */,
 				D1D625B027060A0300F1C80A /* SceneDelegate.swift in Sources */,
 				D1D625C62706113000F1C80A /* CategoriesListViewModel.swift in Sources */,
 				D1D625CD27063D2700F1C80A /* ConceptsListViewModel.swift in Sources */,
 				D1D625CB2706239A00F1C80A /* ConceptsViewController.swift in Sources */,
-				D1123DD227067B5700804AC5 /* CustomUiLabel.swift in Sources */,
+				D1123DD227067B5700804AC5 /* CustomUILabel.swift in Sources */,
 				D1D625C927061C1B00F1C80A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

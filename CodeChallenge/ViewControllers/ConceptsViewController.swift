@@ -17,10 +17,10 @@ class ConceptsViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        conceptsViewModel.bindViewController = {
-            
-            self.updateUI()
-        }
+        let backButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backButton
+        
+        conceptsViewModel.bindViewController = updateUI
         updateUI()
     }
     
