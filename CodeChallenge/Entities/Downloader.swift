@@ -340,12 +340,75 @@ class Downloader{
             
             Un API (Application programming interface) es el punto de entrada a un servidor desde el exterior, están hechas espacialmente para que otras plataformas puedan acceder a los datos del servidor de forma segura.
             
-            Las API se conforman por un verbo que define la acción que hará y la url, 
+            Las API se conforman por un verbo, que define la acción que hará, y la url, que apunta al código que será ejecutado.
+            
+            Las acciones pueden ser:
+            
+            GET - Obtiene una entidad
+            POST - Crea una entidad
+            PUT - Modifica una entidad
+            DELETE - Borra una entidad
             
             """
         
         
         let apiWebConcept = Concept(title: "¿Qué es y cómo funciona una API web?", description: apiWebDescription, example: "")
+        
+        let apiToolsDescription = """
+            
+            Existen varias herramientas para probar una Web API, entre ellas:
+            
+            - Postman
+            - Insomnia
+            
+            Éstas herramientas permiten enviar solicitudes a una API configurando las peticiones como puede ser las cabeceras, la información que se envía y su formato, el método de autenticación etc. También nos permite ver la respuesta en diferentes formatos como lo puede ser en texto plano, JSON etc.
+            
+            """
+        
+        
+        let apiToolsConcept = Concept(title: "¿Qué herramientas se pueden utilizar para probar Web APIs?", description: apiToolsDescription, example: "")
+        
+        let apiCategory = Category(name: "API", concepts: [apiWebConcept, apiToolsConcept])
+        
+        let errorHandlingDescription = """
+            
+            Una herramienta muy utilizada para el control de errores es el try catch, existen en la mayoría de los lenguajes y nos permite intentar ejecutar un código 'try' y en caso de un error atraparlo y manejarlo 'catch'.
+            
+            En Swift podemos hacerlo mediante la sentencia do-catch, para hacerlo se define el código dentro del bloque 'do' y escribimos un 'try' en las sentencias que arrojan error, después del bloque 'do' creamos un bloque 'catch', se pueden poner uno o más bloques catch para identificar diferentes tipos de errores, cuando se arroja un error se identifica cuál bloque catch coincide con ese error y es el que se ejecuta, si no se especifica ningún patrón de error tenemos una variable local llamada error que almacena el error.
+            
+            """
+        
+        let errorHandlingExample = """
+            
+            do{
+            
+                let userData = try JSONSerialization.jsonObject(with: data, options: [])
+            }catch{
+                print(error)
+            }
+            
+            """
+        
+        let errorHandlingConcept = Concept(title: "¿Qué herramienta has utilizado para el manejo de errores?", description: errorHandlingDescription, example: errorHandlingExample)
+        
+        let errorHandlingCategory = Category(name: "¿Qué herramienta has utilizado para el manejo de errores?", concepts: [errorHandlingConcept])
+        
+        
+        let tDDDescription = """
+            
+            Test driven development es un estilo de programación en el cuál el desarrollo se centra en crear pruebas unitarias y generar el código al rededor de ellas.
+            
+            El camino a tomar sería el siguiente:
+            
+            Primero se crea una prueba unitaria simulando una característica de la aplicación, como aún no existe ese código la prueba fallará. El siguiente paso es crear el código suficiente para pasar esa prueba unitaria, después se refactoriza el código manteniéndolo lo más simple posible y inicia el proceso otra vez.
+            
+            Al final tendremos muchas pruebas unitarias donde se centrará el desarrollo.
+            
+            """
+        
+        let tDDConcept = Concept(title: "Test driven development", description: tDDDescription, example: "")
+        
+        let tDDCategory = Category(name: "Test driven development", concepts: [tDDConcept])
         
         concepts.append(codeReviewCategory)
         concepts.append(accessControl)
@@ -353,7 +416,9 @@ class Downloader{
         concepts.append(designPatternsCategory)
         concepts.append(SOLIDCategory)
         concepts.append(pooCategory)
-        concepts.append(apiWebConcept)
+        concepts.append(apiCategory)
+        concepts.append(errorHandlingCategory)
+        concepts.append(tDDCategory)
         
         let dataConcepts = try! JSONEncoder().encode(concepts)
         
